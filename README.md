@@ -2,7 +2,7 @@
 
 使用命令
 '''
-curl -LO https://raw.githubusercontent.com/ChijansLewis/Linuxscripts/main/jacky_cn.sh && chmod +x jacky_cn.sh && ./jacky_cn.sh
+curl -LO https://raw.githubusercontent.com/ChijansLewis/Linuxscripts/main/jacky_zh.sh && chmod +x jacky_zh.sh && ./jacky_zh.sh
 '''
 或
 '''
