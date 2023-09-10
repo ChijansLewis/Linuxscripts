@@ -48,7 +48,7 @@ echo -e "${BLUE}Current User:${RESET} $current_user"
 echo -e "${BLUE}Sudo Privilege:${RESET} $sudo_status"
 echo -e "${BLUE}UFW Status:${RESET} $ufw_status"
 echo -e "${BLUE}Congestion Control Algorithm:${RESET} $congestion_algo"
-echo -e "${BLUE}Running script with command: jacky or source $0"
+echo -e "${BLUE}Running script with command: ${RESET}jacky or source $0"
 echo "----------------------------------------"
 
 # Main Menu
