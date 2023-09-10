@@ -44,7 +44,7 @@ echo -e "${BLUE}当前用户：${RESET} $current_user"
 echo -e "${BLUE}Sudo权限：${RESET} $sudo_status"
 echo -e "${BLUE}防火墙状态：${RESET} $ufw_status"
 echo -e "${BLUE}拥塞控制算法：${RESET} $congestion_algo"
-echo -e "${BLUE}使用命令运行脚本：${RESET} $0"
+echo -e "${BLUE}使用命令运行脚本：${RESET} jacky 或 $0"
 echo "----------------------------------------"
 
 # Main Menu
@@ -143,7 +143,7 @@ case $choice in
         bash <(curl -Ls https://gitlab.com/rwkgyg/CFwarp/raw/main/CFwarp.sh)
         ;;
     9)
-        echo "退出ing the program..."
+        echo "已退出"
         exit 0
         ;;
     *)
