@@ -8,6 +8,7 @@ if ! grep -q "alias jacky=" ~/.bashrc; then
     
     # 将别名添加到.bashrc
     echo "alias jacky='$script_path'" >> ~/.bashrc
+    source ~/.bashrc
 fi
 
 
