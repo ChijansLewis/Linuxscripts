@@ -1,14 +1,18 @@
 #!/bin/bash
 # coding: utf-8
 
-# Check if the alias is already set
-if ! grep -q "alias jacky=" ~/.bashrc; then
-    # Get the full path of the current script
+
+set_alias() {
     script_path="$(realpath $0)"
-    
-    # Add the alias to .bashrc
+
     echo "alias jacky='$script_path'" >> ~/.bashrc
-    source ~/.bashrc
+
+}
+
+if ! grep -q "alias jacky=" ~/.bashrc; then
+    set_alias
+    echo "The alias was set and the .bashrc was reloaded. Please restart the script."
+    exit
 fi
 
 
