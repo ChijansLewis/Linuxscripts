@@ -6,6 +6,6 @@ curl -LO https://raw.githubusercontent.com/ChijansLewis/Linuxscripts/main/jacky_
 '''
 或
 '''
-curl -LO https://raw.githubusercontent.com/ChijansLewis/Linuxscripts/main/jacky_en.sh && chmod +x jacky_cn.sh && ./jacky_eng.sh
+curl -LO https://raw.githubusercontent.com/ChijansLewis/Linuxscripts/main/jacky_en.sh && chmod +x jacky_en.sh && ./jacky_en.sh
 '''
 
