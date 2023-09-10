@@ -17,12 +17,12 @@ case $choice in
     1)
         curl -LO https://raw.githubusercontent.com/ChijansLewis/Linuxscripts/main/jacky_zh.sh 
         chmod +x jacky_zh.sh
-        echo "第一次执行请使用 ${GREEN}./jacky_zh.sh && . ~/.bashrc${RESET} 命令，以后可以用${GERRN}jacky${RESET}调用脚本"
+        echo -e "第一次执行请使用 ${GREEN}./jacky_zh.sh && . ~/.bashrc${RESET} 命令，以后可以用${GERRN}jacky${RESET}调用脚本"
         ;;
     2)
         curl -LO https://raw.githubusercontent.com/ChijansLewis/Linuxscripts/main/jacky_en.sh 
         chmod +x jacky_en.sh
-        echo "Please use the ${GREEN}./jacky_en.sh && . ~/.bashrc${RESET} command for the first execution. You can use ${GERRN}jacky${RESET} to call the script in the future."
+        echo -e "Please use the ${GREEN}./jacky_en.sh && . ~/.bashrc${RESET} command for the first execution. You can use ${GERRN}jacky${RESET} to call the script in the future."
         ;;
     *)
         echo "Invalid choice!"
