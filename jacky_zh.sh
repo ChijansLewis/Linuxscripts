@@ -1,14 +1,23 @@
 #!/bin/bash
 # coding: utf-8
 
-# 检查是否已设置别名
-if ! grep -q "alias jacky=" ~/.bashrc; then
+# 设置别名
+set_alias() {
     # 获取当前脚本的完整路径
     script_path="$(realpath $0)"
-    
+
     # 将别名添加到.bashrc
     echo "alias jacky='$script_path'" >> ~/.bashrc
+
+    # 重新加载.bashrc以应用别名
     source ~/.bashrc
+}
+
+# 检查是否已设置别名
+if ! grep -q "alias jacky=" ~/.bashrc; then
+    set_alias
+    echo "别名已设置并重新加载了.bashrc。请重新启动脚本。"
+    exit
 fi
 
 
